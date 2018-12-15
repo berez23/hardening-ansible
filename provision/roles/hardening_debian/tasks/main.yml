@@ -3,3 +3,4 @@
 - name: Include a play after another play
   include: updatedpack.yml
   include: sshd.yml
+  include: firewall.yml

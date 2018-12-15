@@ -1,0 +1,33 @@
+- name: Install Iptables package ( Actually checking is installed ) 
+  package:
+    name: iptables
+    state: latest
+
+- name: Flush existing firewall rules
+  iptables:
+    flush: true
+
+- name: Rule 1 - all traffic allowed in lo interface
+  iptables:
+    action: append
+    chain: INPUT
+    in_interface: lo
+    jump: ACCEPT
+
+- name: Rule 2 - do not kick out who is in
+  iptables:
+    chain: INPUT
+    ctstate: ESTABLISHED,RELATED
+    jump: ACCEPT
+
+- name: Rule 3 -  allow SSH traffic
+  iptables:
+    chain: INPUT
+    destination_port: 22
+    jump: ACCEPT
+    protocol: tcp
+
+- name: Rule 4 -   clean up rule 
+  iptables:
+    chain: INPUT
+    jump: DROP
