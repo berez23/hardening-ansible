@@ -5,3 +5,10 @@
   service:
     name: ssh
     state: restarted
+
+- name: restart fail2ban
+  service:
+    name: fail2ban
+    state: restarted
+
+
