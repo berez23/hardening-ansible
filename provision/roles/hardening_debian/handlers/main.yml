@@ -1,2 +1,7 @@
 ---
 # handlers file for provision/roles/hardening_debian
+
+- name: restart sshd
+  service:
+    name: ssh
+    state: restarted

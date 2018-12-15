@@ -1,2 +1,5 @@
 ---
 # tasks file for provision/roles/hardening_debian
+- name: Include a play after another play
+  include: updatedpack.yml
+  include: sshd.yml
