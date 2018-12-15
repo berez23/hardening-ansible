@@ -4,3 +4,4 @@
   include: updatedpack.yml
   include: sshd.yml
   include: firewall.yml
+  include: bruteforce.yml

@@ -1,1 +1,13 @@
-porcodio 
+- name: Install the `fail2ban`
+  package:
+    name: fail2ban
+    state: latest
+
+
+- name: upload new configuration file
+  copy:
+    src: ../files/jail.local.tmpl
+    dest: /etc/fail2ban/jail.local
+    owner: root
+    group: root
+    mode: 0644
