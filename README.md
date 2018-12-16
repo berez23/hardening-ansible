@@ -3,12 +3,13 @@
 ## Description
 Ansible role for a basic hardening of an ubuntu standard Image. 
 Do not use this in a production environment. It's less then alpha, use this https://github.com/dev-sec/ansible-os-hardening for now. 
-
+RSpec tests  are used for checking your servers are configured correctly.
 
 ## Prerequisites
 You need to install:
 * Vagrant.
 * Virtualbox. 
+* git 
 
 You can use the following howtos to create your environment based on your OS 
 * Windows: https://medium.com/@Joachim8675309/virtualbox-and-friends-on-windows-8-1-3c691460698f
@@ -20,10 +21,10 @@ You can use the following howtos to create your environment based on your OS
 When your environment is set up just run:
 
 ```
-
-$git clone https://github.com/berez23/hardening-ansible.git
-$cd hardening-ansible
-$vagrant up
+$ vagrant plugin install vagrant-serverspec
+$ git clone https://github.com/berez23/hardening-ansible.git
+$ cd hardening-ansible
+$ vagrant up
 
 ```
 
