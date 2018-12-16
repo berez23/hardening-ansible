@@ -7,4 +7,4 @@ Do not use this in a production env. It's less then alfa, use this https://githu
 ## Prerequisites
 You need to install:
 * Vagrant.
-*Virtualbox. 
+* Virtualbox. 
