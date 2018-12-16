@@ -1,7 +1,10 @@
 ---
 # tasks file for provision/roles/hardening_debian
-- name: Include a play after another play
+- name: system upgrade 
   include: updatedpack.yml
+- name: harden ssh 
   include: sshd.yml
+- name: configuring firewall 
   include: firewall.yml
+- name: configuring bruteforce protection
   include: bruteforce.yml

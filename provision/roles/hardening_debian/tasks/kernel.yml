@@ -1,0 +1,10 @@
+- name: upload new configuration file to harden  the os core
+  copy:
+    src: ../files/sysctl.conf.tmpl
+    dest: /etc/sysctl.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart sysctl
+  tags: [bruteforce, config]
+
