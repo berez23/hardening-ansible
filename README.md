@@ -27,7 +27,7 @@ $vagrant up
 
 ```
 
-Hopefully your Ubuntu server should be up and running and ansbile should do the rest.
+Hopefully your Ubuntu server should be up and running and Ansible should do the rest.
 
 ##  ssh the new Ubuntu server
 
