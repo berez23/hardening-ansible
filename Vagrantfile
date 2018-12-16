@@ -7,4 +7,7 @@ Vagrant.configure("2") do |config|
     ansible.playbook = "provision/playbook.yml"
     ansible.verbose = true
   end
+  config.vm.provision :serverspec do |spec|
+    spec.pattern = 'provision/roles/hardening_debian/tests/*_spec.rb'
+  end
 end
