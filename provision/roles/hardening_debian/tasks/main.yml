@@ -8,3 +8,5 @@
   include: firewall.yml
 - name: configuring bruteforce protection
   include: bruteforce.yml
+- name: securing kernel params
+  include: kernel.yml

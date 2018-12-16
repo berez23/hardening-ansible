@@ -11,4 +11,5 @@
     name: fail2ban
     state: restarted
 
-
+- name: reload kernel param
+  shell: /sbin/sysctl -p 

@@ -5,6 +5,4 @@
     owner: root
     group: root
     mode: 0644
-  notify: restart sysctl
-  tags: [bruteforce, config]
-
+  notify: reload kernel param
