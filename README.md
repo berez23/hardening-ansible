@@ -11,6 +11,7 @@ You need to install:
 * Virtualbox. 
 * git 
 * ruby 
+
 You can use the following howtos to create your environment based on your OS 
 * Windows: https://medium.com/@Joachim8675309/virtualbox-and-friends-on-windows-8-1-3c691460698f
 * Macos: https://medium.com/@Joachim8675309/virtualbox-and-friends-on-macos-fd0b78c71a32
